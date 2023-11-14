@@ -1,0 +1,283 @@
+{
+  "klinikler": [
+	{
+	  "value": 106,
+	  "text": "Aile Hekimliği",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 112,
+	  "text": "Beyin ve Sinir Cerrahisi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 116,
+	  "text": "Çocuk Cerrahisi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 132,
+	  "text": "Çocuk Sağlığı ve Hastalıkları",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 134,
+	  "text": "Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 136,
+	  "text": "Deri ve Zührevi Hastalıkları (Cildiye)",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 198,
+	  "text": "Diş Hekimliği (Genel Diş)",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 140,
+	  "text": "Enfeksiyon Hastalıkları ve Klinik Mikrobiyoloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 142,
+	  "text": "Fiziksel Tıp ve Rehabilitasyon",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 144,
+	  "text": "Gastroenteroloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 147,
+	  "text": "Genel Cerrahi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 149,
+	  "text": "Göğüs Cerrahisi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 150,
+	  "text": "Göğüs Hastalıkları",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 151,
+	  "text": "Göz Hastalıkları",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 155,
+	  "text": "Hematoloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 157,
+	  "text": "İç Hastalıkları (Dahiliye)",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 161,
+	  "text": "Kadın Hastalıkları ve Doğum",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 162,
+	  "text": "Kalp ve Damar Cerrahisi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 163,
+	  "text": "Kardiyoloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 165,
+	  "text": "Kulak Burun Boğaz Hastalıkları",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 166,
+	  "text": "Nefroloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 168,
+	  "text": "Nöroloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 171,
+	  "text": "Ortopedi ve Travmatoloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 175,
+	  "text": "Plastik, Rekonstrüktif ve Estetik Cerrahi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 177,
+	  "text": "Radyasyon Onkolojisi",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 180,
+	  "text": "Romatoloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 181,
+	  "text": "Ruh Sağlığı ve Hastalıkları (Psikiyatri)",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 210,
+	  "text": "Sağlık Kurulu",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 2,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 211,
+	  "text": "Sağlık Kurulu ÇÖZGER (Çocuk Özel Gereksinim Raporu)",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 2,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 192,
+	  "text": "Tıbbi Onkoloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	},
+	{
+	  "value": 196,
+	  "text": "Üroloji",
+	  "children": [ ],
+	  "value2": 0,
+	  "value3": 1,
+	  "text2": "",
+	  "favori": false
+	}
+  ]
+}

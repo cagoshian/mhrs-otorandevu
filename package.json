@@ -1,0 +1,19 @@
+{
+  "name": "mhrs-otorandevu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "cgn",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.34",
+    "prompt-sync": "^4.2.0"
+  }
+}
