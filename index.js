@@ -11,8 +11,10 @@ const sifre = prompt("Şifre: ")
 functions.girisYap(tckimlik, sifre).then(rawtoken => {
    console.log("Giriş başarılı")
    
-   const ilprompt = prompt("Randevu istediğiniz ilin adı: ")
-   const il = iller.find(a => a.isim.toLowerCase().includes(ilprompt.toLowerCase()))
+   const ilprompt = prompt("Randevu istediğiniz ilin adı veya plakası: ")
+   let il;
+   if (isNaN(Number(ilprompt))) il = iller.find(a => a.isim.toLowerCase().includes(ilprompt.toLowerCase()))
+   else il = iller.find(a => a.plaka == ilprompt)
    if (!il) return console.log("Belirtilen il bulunamadı")
    console.log(`Seçilen il: ${il.plaka} plaka kodlu ${il.isim}`)
    const klinikprompt = prompt("Randevu istediğiniz kliniğin adı: ")
