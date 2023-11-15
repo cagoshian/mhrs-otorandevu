@@ -27,7 +27,7 @@ functions.girisYap(tckimlik, sifre).then(rawtoken => {
    if (isNaN(Number(onumuzdekigun)) || onumuzdekigun < 1 || onumuzdekigun > 15) return console.log("Geçersiz gün sayısı")
 
    const token = String("Bearer " + rawtoken.split('"')[1])
-   console.log("Başladı, her 5 dakikada bir randevular kontrol edilecek")
+   console.log("Başladı, her 3 dakikada bir randevular kontrol edilecek")
    let interval = setInterval(() => {
       functions.kullaniciRandevulari(token).then(randevular => {
          if (randevular.aktifRandevuDtoList.filter(a => a.mhrsKlinikAdi == klinik.text).length <= 0) {
@@ -57,5 +57,5 @@ functions.girisYap(tckimlik, sifre).then(rawtoken => {
             })
          } else console.log("Zaten randevu alınmış")
       }).catch(err => console.error("Randevu geçmişi alınırken hata oluştu"))
-   }, 5000)
+   }, 180000)
 }).catch(err => console.error("Giriş başarısız"))
