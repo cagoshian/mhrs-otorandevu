@@ -50,12 +50,12 @@ functions.girisYap(tckimlik, sifre).then(rawtoken => {
    
    const ilprompt = prompt("Randevu istediğiniz ilin adı veya plakası: ")
    let il;
-   if (isNaN(Number(ilprompt))) il = iller.find(a => a.isim.toLowerCase().includes(ilprompt.toLowerCase()))
+   if (isNaN(Number(ilprompt))) il = iller.find(a => a.isim.toLowerCase().replaceAll(" ", "").includes(ilprompt.toLowerCase().replaceAll(" ", "")))
    else il = iller.find(a => a.plaka == ilprompt)
    if (!il) return console.log("Belirtilen il bulunamadı")
    console.log(`Seçilen il: ${il.plaka} plaka kodlu ${il.isim}`)
    const klinikprompt = prompt("Randevu istediğiniz kliniğin adı: ")
-   const klinik = klinikler.find(a => a.text.toLowerCase().includes(klinikprompt.toLowerCase()))
+   const klinik = klinikler.find(a => a.text.toLowerCase().replaceAll(" ", "").includes(klinikprompt.toLowerCase().replaceAll(" ", "")))
    if (!klinik) return console.log("Belirtilen klinik bulunamadı")
    console.log(`Seçilen klinik: ${klinik.value} ID'li ${klinik.text}`)
    const cinsiyet = prompt("İstediğiniz cinsiyet (E/K/F): ").toUpperCase()
