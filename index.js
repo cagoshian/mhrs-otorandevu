@@ -84,6 +84,6 @@ functions.girisYap(tckimlik, sifre).then(loginresp => {
    console.log("Başladı, her 2 dakikada bir randevular kontrol edilecek")
    kontrolEt(token, il, ilce, cinsiyet, klinik, onumuzdekigun)
    interval = setInterval(() => {
-      kontrolEt(token, il, cinsiyet, klinik, onumuzdekigun)
+      kontrolEt(token, il, ilce, cinsiyet, klinik, onumuzdekigun)
    }, 120000)
 }).catch(() => console.error("Giriş başarısız"))
