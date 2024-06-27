@@ -77,7 +77,7 @@ functions.girisYap(tckimlik, sifre).then(loginresp => {
    console.log(`Seçilen klinik: ${klinik.value} ID'li ${klinik.text}`)
    const cinsiyet = prompt("İstediğiniz cinsiyet (E/K/F): ").toUpperCase()
    if (cinsiyet != "E" && cinsiyet != "K" && cinsiyet != "F") return console.log("Geçersiz cinsiyet")
-   console.log(`Seçilen cinsiyet: ${cinsiyet.toLowerCase().replace('e', 'Erkek').replace('k', 'Kadın').replace('f', 'Fark etmez')}`)
+   console.log(`Seçilen cinsiyet: ${cinsiyet == "E" ? "Erkek" : cinsiyet == "K" ? "Kadın" : "Fark etmez"}`)
    const onumuzdekigun = prompt("Önümüzdeki kaç gün için randevu alınsın? (1-15): ")
    if (isNaN(Number(onumuzdekigun)) || onumuzdekigun < 1 || onumuzdekigun > 15) return console.log("Geçersiz gün sayısı")
    console.log(`Seçilen gün sayısı: Önümüzdeki ${onumuzdekigun} gün`)
