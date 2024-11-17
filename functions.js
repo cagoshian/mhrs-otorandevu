@@ -54,14 +54,59 @@ module.exports = {
         });
     },
     
-    randevuAra: (token, plaka, cinsiyet, klinikid, baslangic, bitis) => {
+    illeriAl: async (token) => {
+        return new Promise((resolve, reject) => {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': token
+                }
+            };
+            
+            axios.get(`https://prd.mhrs.gov.tr/api/yonetim/genel/il/selectinput-tree`, config).then(resp => {
+                resolve(resp.data);
+            }).catch(error => reject(error));
+        });
+    },
+    
+    ilinIlceleri: async (token, ilPlaka) => {
+        return new Promise((resolve, reject) => {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': token
+                }
+            };
+            
+            axios.get(`https://prd.mhrs.gov.tr/api/yonetim/genel/ilce/selectinput/${ilPlaka}`, config).then(resp => {
+                resolve(resp.data);
+            }).catch(error => reject(error));
+        });
+    },
+    
+    klinikleriAl: async (token, ilPlaka, ilceId) => {
+        return new Promise((resolve, reject) => {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': token
+                }
+            };
+            
+            axios.get(`https://prd.mhrs.gov.tr/api/kurum/kurum/kurum-klinik/il/${ilPlaka}/ilce/${ilceId}/kurum/-1/aksiyon/200/select-input`, config).then(resp => {
+                resolve(resp.data.data);
+            }).catch(error => reject(error));
+        });
+    },
+    
+    randevuAra: (token, plaka, ilceId, cinsiyet, klinikid, baslangic, bitis) => {
         return new Promise((resolve, reject) => {
             const data = JSON.stringify({
                 "aksiyonId": "200",
                 "cinsiyet": cinsiyet,
                 "mhrsHekimId": -1,
                 "mhrsIlId": plaka,
-                "mhrsIlceId": -1,
+                "mhrsIlceId": ilceId,
                 "mhrsKlinikId": klinikid,
                 "mhrsKurumId": -1,
                 "muayeneYeriId": -1,
@@ -80,10 +125,7 @@ module.exports = {
             };
             
             axios.post("https://prd.mhrs.gov.tr/api/kurum-rss/randevu/slot-sorgulama/arama", data, config).then(resp => {
-                resolve({
-                    hekimId: resp.data.data.hastane[0].hekim.mhrsHekimId,
-                    kurumId: resp.data.data.hastane[0].kurum.mhrsKurumId,
-                });
+                resolve(resp.data.data);
             }).catch(error => reject(error));
         })
     },
