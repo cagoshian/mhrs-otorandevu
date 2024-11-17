@@ -9,4 +9,4 @@ Gerekli bağımlılıkları kurmak için, klasörde bir terminal penceresi açı
 
 Ardından, `node .` komuduyla yazılımı çalıştırın.
 
-Programı çalıştırdığınızda önce sizden TC kimlik numaranızı ve şifrenizi isteyecektir. Bu bilgileri girip MHRS'ye girişi sağladıktan sonra, randevuyu istediğiniz ili, ilçeyi, kliniği, cinsiyet tercihini ve önümüzdeki kaç gün için randevu aranması gerektiğini soracaktır. Bu bilgileri girdikten sonra yazılım, her 2 dakikada bir kriterlere uygun randevu olup olmadığını kontrol edecektir. Uygun bir randevu bulduğunda, randevuyu otomatik olarak alacaktır.
+Programı çalıştırdığınızda önce sizden TC kimlik numaranızı ve şifrenizi isteyecektir. Bu bilgileri girip MHRS'ye girişi sağladıktan sonra, randevuyu istediğiniz ili, ilçeyi, kliniği, cinsiyet tercihini ve önümüzdeki kaç gün için randevu aranması gerektiğini soracaktır. Bu bilgileri girdikten sonra yazılım, her dakikada bir kriterlere uygun randevu olup olmadığını kontrol edecektir. Uygun bir randevu bulduğunda, randevuyu otomatik olarak alacaktır.
