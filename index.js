@@ -34,7 +34,6 @@ function kontrolEt(token, il, ilce, cinsiyet, klinik, onumuzdekigun) {
                      }
                   }).catch(() => console.error("Hekim aranırken hata oluştu"))
             }).catch(err => {
-               console.error(err)
                if (err.response.data.errors[0].kodu == "RND4010") {
                   denemesayisi++
                   console.log(`Randevu bulunamadı - ${denemesayisi}. deneme`)
