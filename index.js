@@ -70,12 +70,15 @@ functions.girisYap(tckimlik, sifre).then(async loginresp => {
       ilce = ilceler.find(a => functions.yaziSadele(a.text).includes(ilcePrompt))
       if (!ilce) return console.log("Belirtilen ilçe bulunamadı")
       console.log(`Seçilen ilçe: ${ilce.value} ID'li ${ilce.text}`)
-   }else console.log(`Seçilen ilçe: Fark etmez`)
+   }else{
+      ilce = "f"
+      console.log(`Seçilen ilçe: Fark etmez`)
+   }
    
    let klinik;
    const klinikPrompt = functions.yaziSadele(prompt("Randevu istediğiniz kliniğin adı: "))
    let klinikler = await functions.klinikleriAl(token, il.value, ilce == "f" ? -1 : ilce.value)
-   klinik = klinikler.find(a => functions.yaziSadele(a.text).includes(klinikPrompt))
+   klinik = klinikler.find(a => functions.yaziSadele(a.text) == klinikPrompt) || klinikler.find(a => functions.yaziSadele(a.text).includes(klinikPrompt))
    if (!klinik) return console.log("Belirtilen klinik bulunamadı")
    console.log(`Seçilen klinik: ${klinik.value} ID'li ${klinik.text}`)
    
