@@ -63,7 +63,7 @@ module.exports = {
                 }
             };
             
-            axios.get(`https://prd.mhrs.gov.tr/api/yonetim/genel/il/selectinput-tree`, config).then(resp => {
+            axios.get("https://prd.mhrs.gov.tr/api/yonetim/genel/il/selectinput-tree", config).then(resp => {
                 resolve(resp.data);
             }).catch(error => reject(error));
         });
