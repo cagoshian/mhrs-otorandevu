@@ -126,7 +126,7 @@ async function main() {
 		const il = iller.find((a) =>
 			Number.isNaN(Number(ilPrompt))
 				? functions.yaziSadele(a.text).includes(ilPrompt)
-				: a.value === ilPrompt,
+				: a.value === Number(ilPrompt),
 		);
 		if (!il) {
 			console.log("Belirtilen il bulunamadı");
